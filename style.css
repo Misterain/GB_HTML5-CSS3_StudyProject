@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: ArialMT;
+}
+
+.padding {
+    padding: 50px;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 36px;
+    color: #445161;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+}
+
+header {
+    background-color: #445162;
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.3);
+    font-weight: 400;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 323px;
+    box-sizing: border-box;
+}
+
+.header-list {
+    font-size: 20px;
+    line-height: 36px;
+    position: relative;
+    list-style: none;
+}
+
+.header-list-item {
+    padding-left: 40px;
+}
+
+.header-list-item:before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 19px;
+    position: absolute;
+    background-image: url(img/check_icon_348.png);
+    text-align: center;
+    line-height: 19px;
+    left: 1px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-text {
+    margin-bottom: 20px;
+    padding-right: 100px;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+}
+
+.dignity {
+    background-color: #f5f5f5;
+    padding-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dignity-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.dignity-list-item {
+    width: 50%;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding: 0 30px 30px 30px;
+}
+
+.dignity-list-text {
+    position: relative;
+}
+
+.dignity-list-text:before {
+    content: "+";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: #445161;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    line-height: 32px;
+    position: absolute;
+    top: 5px;
+    left: -40px;
+}
+
+.scrins {
+    padding-bottom: 20px;
+}
+
+.scrins-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.scrins-list-item {
+    width: 50%;
+    display: block;
+    padding-bottom: 30px;
+}
+
+.scrins-img {
+    display: flow;
+    float: left;
+    padding-right: 10px;
+}
+
+.scrins-headding {
+    line-height: 30px;
+    color: #445161;
+    padding: 0 15px 10px 15px;
+}
+
+.scrins-text {
+    padding: 0 15px;
+}
+
+.reviews {
+    background-color: #f5f5f5;
+    padding-bottom: 35px;
+}
+
+.reviews-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.reviews-list-item {
+    width: 50%;
+    box-sizing: border-box;
+    padding-bottom: 25px;
+}
+
+.comment-img {
+    border-radius: 50%;
+    display: flow;
+    float: left;
+}
+
+.comment {
+    width: 483px;
+    margin-left: 103px;
+    padding: 11px;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    position: relative;
+}
+
+.comment:before {
+    content: "";
+    border: 15px solid transparent;
+    border-right: 15px solid #ebebeb;
+    position: absolute;
+    top: 20px;
+    left: -30px;
+}
+
+.comment-text {
+    font-size: 14px;
+    line-height: 18px;
+    font-style: italic;
+    color: #333333;
+    padding-bottom: 15px;
+}
+
+.comment-author {
+    font-size: 14px;
+    line-height: 18px;
+    color: #989898;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.products-item {
+    width: 30%;
+    max-width: 300px;
+    background-color: #445162;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin: 0 15px;
+}
+
+.products-item:nth-child(2) {
+    height: 306px;
+    align-self: flex-end;
+}
+
+.products-item:nth-child(3) {
+    height: 404px;
+    align-self: flex-end;
+}
+
+.products-item:last-child {
+    height: 499px;
+    align-self: flex-end;
+}
+
+.products-name {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+.products-price {
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 400;
+    background-color: #ffffff;
+    color: #445162;
+    text-align: center;
+    padding: 15px;
+    margin: -13px;
+}
+
+.products-list {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 20px 15px;
+
+}
+
+.products-button {
+    width: 100%;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #445161;
+}
