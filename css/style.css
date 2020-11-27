@@ -5,6 +5,7 @@
 
 body {
     font-family: ArialMT;
+    font-weight: 400;
 }
 
 .padding {
@@ -60,7 +61,7 @@ header {
     width: 25px;
     height: 19px;
     position: absolute;
-    background-image: url(img/check_icon_348.png);
+    background-image: url(../img/check_icon_348.png);
     text-align: center;
     line-height: 19px;
     left: 1px;
@@ -132,24 +133,28 @@ header {
 
 .scrins-list-item {
     width: 50%;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     padding-bottom: 30px;
 }
 
 .scrins-img {
-    display: flow;
-    float: left;
-    padding-right: 10px;
+    max-width: 200px;
+    max-height: 150px;
 }
 
+.scrins-text {
+    max-width: 66%;
+}
 .scrins-headding {
     line-height: 30px;
     color: #445161;
     padding: 0 15px 10px 15px;
 }
 
-.scrins-text {
+.scrins-paragraph {
     padding: 0 15px;
+
 }
 
 .reviews {
@@ -278,4 +283,126 @@ header {
     line-height: 18px;
     font-weight: 700;
     color: #445161;
+}
+
+footer {
+    background-color: #445162;
+    width: 100%;
+
+    padding-top: 55px;
+}
+
+.footer-heading {
+    font-size: 30px;
+    line-height: 36px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+form {
+    margin: 0 45px;
+    text-align: center;
+}
+
+input {
+    width: 500px;
+    height: 40px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-style: none;
+    font-family: ArialMT;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+}
+
+textarea {
+    resize: none;
+    width: 500px;
+    height: 170px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-style: none;
+    font-family: ArialMT;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+}
+
+.contacts-button {
+    width: 140px;
+    height: 40px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-style: none;
+
+
+    font-family: ArialMT;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #445162;
+}
+
+.means {
+    list-style: none;
+}
+
+.means-item {
+    font-family: ArialMT;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+
+    margin-bottom: 30px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    vertical-align: top;
+    margin-left: 4px;
+
+}
+
+.socials {
+   display: flex;
+}
+
+.copyright {
+    background-color: #fff;
+    width: 100%;
+
+    font-family: ArialMT;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #445162;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #eff1fd;
+}
+
+button:focus {
+    outline: 1px solid gray;
 }
